@@ -1,47 +1,49 @@
 import React from 'react';
 
-function About() {
-    return (
-    
-        <body>
-          <div className="main-wrap">
-            <div className="form-wrap">
-              <h1>
-                SIGN <span>UP</span>
-              </h1>
-              <h6>Welcome to Telegram</h6>
-              <form className="form">
-                <input type="email" name="email" id="email" placeholder="Email" />
-                <br />
-                <input type="password" name="pass" id="pass" placeholder="Password" />
-                <br />
-                <input
-                  type="password"
-                  name="cpass"
-                  id="cpass"
-                  placeholder="Confirm Password"
-                />
-                <br />
-                <input type="number" name="Ages" id="Ages" placeholder="Age" />
-                <br />
-                <input type="date" name="DOB" id="DOB" placeholder="Date of Birth" />
-                <br />
-                <input type="number" name="phno" id="phno" placeholder="Phone Number" />
-                <center>
-               
-                    <button type="submit" className="form-btn">
-                      SIGN UP
-                    </button>
-  
-                </center>
-              </form>
-             
-              
-            </div>
-          </div>
-        </body>
-  
-    );
-  }
-  
-  export default About;
+const TermsAndConditionsPage = () => {
+  return (
+    <div className="terms-container">
+      <header>
+        <h1 className='h1'>Terms and Conditions</h1>
+      </header>
+      <section className="terms-content">
+        <h2>1. Introduction</h2>
+        <p>
+          Welcome to our online payment platform. These terms and conditions outline the rules and regulations for the use of our services.
+        </p>
+
+        <h2>2. Acceptance of Terms</h2>
+        <p>
+          By using our platform, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our services.
+        </p>
+
+        <h2>3. Account Registration</h2>
+        <p>
+          To use certain features of our platform, you may be required to register for an account. You agree to provide accurate and complete information during the registration process.
+        </p>
+
+        <h2>4. Payment Security</h2>
+        <p>
+          We take the security of your payments seriously. All transactions are encrypted, and we follow industry best practices to protect your financial information.
+        </p>
+
+        <h2>5. Prohibited Activities</h2>
+        <p>
+          You must not engage in any activities that violate the law or the rights of others while using our platform. This includes, but is not limited to, fraud, money laundering, and unauthorized access.
+        </p>
+
+        <h2>6. Changes to Terms</h2>
+        <p>
+          We reserve the right to modify these terms and conditions at any time. You are responsible for regularly reviewing these terms, and your continued use of the platform constitutes acceptance of any changes.
+        </p>
+
+        <h2>7. Termination</h2>
+        <p>
+          We may terminate or suspend your account and access to our services at our sole discretion, without notice, for any reason, including violation of these terms.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default TermsAndConditionsPage;

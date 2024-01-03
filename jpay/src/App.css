@@ -1,42 +1,102 @@
 body{
   background-color: rgb(5, 117, 245);;
 }
-ul {
-  list-style-type: none;
+/* Add this CSS to your stylesheet or create a new CSS file */
+
+/* Navbar styles */
+.navbar-container {
+  background-color: #000; /* Set the background color to black */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.nav-links li {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
- 
-li {
+
+.logo {
   float: left;
+  height: 70px;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+/* Place the logo on the left without left margin */
+.logo-container {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
 }
 
-li a:hover {
-  background-color:greenyellow;
+.nav-links a:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Scale the element on hover */
 }
 
-.active {
-  background-color:black;
+/* Login and Signup styles */
+.Login, .Signup {
+  color: #fff;
+  /* background-color: #4CAF50; */
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
 }
-*{
-  margin:0px;
-  padding:0px;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+
+.Login:hover, .Signup:hover {
+  background-color: #45a049;
+  transform: scale(1.1); /* Scale the element on hover */
 }
+
+/* Additional link styles */
+.About, .sec, .pro {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s; /* Added transition for color change */
+}
+
+.About:hover, .sec:hover, .pro:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+    margin-right: 0;
+  }
+
+  .Login, .Signup, .About, .sec, .pro {
+    float: right;
+    margin: 5px 0;
+    margin-right: 0;
+  }
+}
+
+
 .main-wrap{
   position: relative;
   width: 100%;
@@ -44,8 +104,10 @@ li a:hover {
 .form-wrap{
   margin:auto;
   margin-top:5%;
+  margin-bottom: 5%;
   border-radius: 11px;
   padding:80px 25px;
+  
   background-color: white;
   width:350px;
   height:auto;
@@ -59,7 +121,32 @@ li a:hover {
   font-size:14px;
   margin-bottom:20px;
 }
-.form-wrap span{
+.main-wraph{
+  position:relative;
+  width: 50%;
+  height: 20%;
+}
+.form-wraph{
+  margin:auto;
+  margin-top:10%;
+  border-radius: 11px;
+  padding:80px 25px;
+  background-color: white;
+  width:1000px;
+  height:500px;
+ 
+  
+}
+.form-wraph h1{
+  color:black;
+  font-size:100px ;
+}
+.form-wraph h6{
+  color:black;
+  font-size:20px;
+  margin-bottom:20px;
+}
+.form-wraph span{
   color:rgb(5, 117, 245);
 }
 .form input{
@@ -78,6 +165,7 @@ li a:hover {
 }
 .form input::placeholder{
   padding-left: 4px;
+  color: #fff;
 }
 .form .form-btn{
   width:100px;
@@ -100,20 +188,556 @@ li a:hover {
   text-align:center;
   color:rgb(206, 202, 202) !important;
 }
-.social-logo{
+.Home
+{
+  background-color: white;
+}
+.forpass{
+  
+  color:#2523bc;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+
+/* for home page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100%;                                                                                                 
+  width: 100%;
+
+  padding: 90px 0;
+  background:#fff;
+}
+.pic{
+  height: auto;
+  width:  400px;
+}
+.logo
+{
+
+  width:74px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
-.social-logo a{
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 30px;  
+
+}
+.text h2:hover{
+  color:red;
+  
+}
+
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;        
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  text-decoration:none;
+  /* border: 1px solid #4070f4; */
+}
+
+
+/* footer */
+.section__padding{
+  padding: 4rem 4rem;
+  
+}
+.footer{
+  background-color: #2d2d32;
+  width: 100%;
+  
+}
+.sb__footer{
+  display: flex;
+  flex-direction: column;
+}
+.sb__footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.sb__footer-links_div{
+  width: 150px;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color:white
+}
+a{
+  color: rgb(175, 175,179);
+  text-decoration: none;
+}
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+}
+.socialmedia img{
+  width: 80%;
+}
+.sb__footer-links_div h4{
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0.9rem;
+}
+.sb__footer-links_div p{
+font-size: 12px;
+line-height: 15px;
+margin: 0.5rem 0;
+cursor: pointer;
+}
+.sb__footer-below{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+.sb__footer-below-links{
+  display: flex;
+  flex-direction: row;
+}
+.sb__footer-below-links p{
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 2rem;
+  color: white;
+  font-weight: 600;
+}
+hr{
+  color:white !important;
+  width: 100%;
+}
+.sb__footer-copyright p{
+  font-size: 13px;
+  line-height: 15px;
+  color: rgb(255,255,255);
+  font-weight: 600;
+}
+@media screen and (max-width:850px){
+  .sb__footer-heading h1{
+      font-size: 44px;
+      line-height: 50px;
+  }
+}
+@media screen and (max-width:550px){
+  .sb__footer-heading h1{
+      font-size: 34px;
+      line-height: 42px;
+  }
+  .sb__footer-links_div{
+      margin: 1rem 0;
+  }
+  sb__footer-btn p{
+      font-size: 14px;
+      line-height: 20px;
+  }
+  .sb__footer-below{
+      flex-direction: column;
+      justify-content: left;
+  }
+  .sb__footer-below-links{
+      flex-direction: column;
+  }
+  .sb__footer-below-links p{
+      margin-left: 0rem;
+      margin-top: 1rem;
+  }
+}
+@media screen and (max-width:400px){
+  .sb__footer-heading h1{
+      font-size: 27px;
+      line-height: 38px;
+  }
+}
+.body-div{
+  height: 700px;
+  background-color: #6364D5;
+}
+/* profile */
+/* Add this CSS to your stylesheet or create a new CSS file */
+
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.user-details {
   background-color: #fff;
-  width:30px;
-  height:30px;
-  margin:2px 25px;
-  padding:5px;
-  border-radius:20px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.social-logo a img{
-  height:20px;
-  width:20px;
+
+.user-details p {
+  margin: 0;
+  padding: 8px 0;
 }
+
+.balance-section {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.balance-amount {
+  font-size: 1.2em;
+  color: #4CAF50;
+}
+
+.update-form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* Add this CSS to your stylesheet or create a new CSS file */
+
+/* Common Styles for ProfilePage and TransactionHistoryPage */
+.profile-page,
+.transaction-history-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+/* ProfilePage Styles */
+.user-details,
+.balance-section,
+.transaction-history-link {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-details p {
+  margin: 0;
+  padding: 8px 0;
+}
+
+.balance-label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.balance-amount {
+  font-size: 1.2em;
+  color: #4CAF50;
+}
+
+.transaction-history-link a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.transaction-history-link a:hover {
+  background-color: #2980b9;
+}
+
+/* TransactionHistoryPage Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr.income {
+  background-color: #e5f7d3; /* Light green for income */
+}
+
+tr.expense {
+  background-color: #f9d2d2; /* Light red for expenses */
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* terms&conditions */
+
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h1, h2 {
+  color:black; /* Blue color for headings */
+}
+
+.terms-content {
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* You can add more styling based on your design preferences */
+/* Security */
+.security-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #000; /* Blue color for headings */
+}
+
+.security-content {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* You can add more styling based on your design preferences */
+/* paymment */
+.payment-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #007bff; /* Blue color for heading */
+}
+
+.payment-content {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #28a745; /* Green color for button */
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
+/* You can add more styling based on your design preferences */
+
+
+/* payment page */
+ /* Add this CSS to your stylesheet or create a new CSS file */
+
+.payment-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.payment-form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+
